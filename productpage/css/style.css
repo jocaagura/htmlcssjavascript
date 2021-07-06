@@ -1,0 +1,322 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+    .grid-products{
+        display: grid;
+        grid: 2fr/auto auto;
+      }
+  } 
+.separator{
+    margin: 2% 10%;
+width: 80%;
+}
+
+  #main{
+    width: 80%;
+    margin: 5em auto;
+  }
+
+  .grid-products{
+    display: grid;
+    grid: 2fr/auto auto auto auto;
+  }
+  .productcard{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  #idvideo{
+      width:100%;
+      min-height:20em;
+      text-align:center;
+  }
+
+  #video{
+    width: 50%;
+    height: 20em;
+    margin: auto;
+  }
+
+#header{
+    top: 0px;
+    height: 4em;
+    background: #711e80;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#header > img{
+    max-width: 4em;
+    margin-left: 2em;
+    margin-top: 0.3em;
+    position: absolute;
+    left: 2em;
+}
+#nav-bar{
+    display: flex;
+    position: relative;
+    width: 30%;
+    margin-left: 60%;
+    flex-wrap: nowrap;
+    font-size: 1.5em;
+}
+
+#nav-bar > a{
+    color:white;
+text-decoration: none;
+background-color: transparent;
+}
+#nav-bar > a:hover{
+    color:#ff5500;
+
+}
+
+h1, h2, h3, h4{
+    text-align:center;
+    line-height: 2em;
+}
+h4{
+    color: #711e80;
+}
+#description{
+    font-size: 1.5em;
+text-align: center;
+}
+
+form{
+    display: flex;
+flex-direction: column;
+}
+#email{
+    width: 40%;
+height: 3em;
+border-radius: 10px;
+border: solid 1px gray;
+margin-bottom: 0.5em;
+margin-left: 30%;
+}
+
+#id{
+    height: 3em;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+.productcard>p{
+    padding: 0% 2em;
+}
+
+footer{
+    display: grid;
+    grid: 3fr / auto auto auto;
+}
+footer>div>p,footer>div>a {
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+#headerGrande img{
+    max-width: 80px;
+
+}
+#headerGrande{
+    font-size: 100%;
+    background: #ff5500;
+}
+.nav-link.menu-grande{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: light;
+    margin-left: 3em;
+}
+.nav-link.menu-grande.active{
+    color: #ff5500;
+    font-size: 1.2em;
+    font-weight: light;
+    margin-left: 3em;
+}
+.nav-link.menu-grande:active, .nav-link.menu-grande:hover{
+    color: #ff5500;
+}
+
+#headerpequeÃ±o .container-fluid{
+    background: #711e80;
+}
+#headerpequeÃ±o img{
+    max-width: 80px;
+}
+.nav-link.menu-pequeÃ±o{
+    color: #fff;
+    font-size: 1em;
+    font-weight: light;
+    margin-left: 3em;
+}
+.nav-link.menu-pequeÃ±o.active{
+    color: #ff5500;
+    font-size: 1em;
+    font-weight: light;
+    margin-left: 3em;
+}
+.nav-link.menu-pequeÃ±o:active, .nav-link.menu-pequeÃ±o:hover{
+    color: #ff5500;
+}
+body{
+    background: url('http://traeme.com.co/img/fondos/paralax-1.png');
+    font-family:"Open Sans", Arial, Tahoma, sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.row.encabezado{
+    position: relative;
+    height: 100vh;
+    background: #ff5500;
+    
+}
+.textura{
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 10vh;
+    left: -10%;
+    height: 80vh;
+    width: 120%;
+    background-image: url('http://traeme.com.co/img/fondos/paralax-1.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: auto 110%;
+ 
+
+    /*width: 100%;*/
+}
+#textura{
+    -webkit-transition: top 2s; /* Safari */
+    transition: top 2s;
+    -webkit-transition: left 2s; /* Safari */
+    transition: left 2s;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.frase-encabezado{
+    position: relative;
+    font-size: 2vw;
+    color: #f4f4f4;
+    bottom: 10vh;
+}
+.overlay img{
+    width: 30vw;
+}
+.overlay .container,.overlay .row {
+    height: 100%;
+}
+
+#domicilios,#section-4{
+    background-color: #f4f4f4;
+    
+}
+#domicilios .container .row{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.h2-p{
+    color: #ff5500;
+    font-weight: 50;
+    font-size: 38px;
+}
+.cards{
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9a9a;
+}
+.h2-m{
+    color: #711e80;
+    font-weight: 50;
+    font-size: 41px;
+    font-stretch: expanded;
+}
+.h3-n{
+    color: #ff5500;
+}
+.section-2,.section-3,.section-4,.section-5,.section-6,.section-7{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-3 .publicacion-1{
+    padding-top:20px;
+    padding-bottom: 20px;
+    background: #711E80;
+    height: 80%;
+}
+.section-3 .publicacion-1 h4{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.section-3{
+    margin-top:30px;
+}
+.section-3 h4{
+    font-size: 28px;
+    line-height: 38px;
+    color: #711E80;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.section-3 li{
+    color: #ff5500;
+    font-size:100%;
+}
+.section-4{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-descargar{
+    color: #fff;
+    background-color: #ff5500;
+}
+#footer, footer{
+    background-color: #f4f4f4;
+}
+.llamado{
+    font-size:1.6em;
+}
+.googleplay{
+    max-width: 350px;;
+}
+
+
+/* Programadas */
+.hide{
+    display: none;
+}
+
+
+
