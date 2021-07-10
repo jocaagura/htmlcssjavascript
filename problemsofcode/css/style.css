@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+
+/* variables for document */
+:root {
+  --backGround-color: #ddd;
+  --div-inside-background-color: #fff;
+  --div-emphasis-background-color: orange;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Otomanopee One", sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#show_results {
+  width: 100%;
+  background-color: var(--backGround-color, #ddd);
+  height: 5em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+#show_results > div {
+  width: 4em;
+  height: 4em;
+  background-color: var(--div-inside-background-color, #fff);
+  line-height: 4em;
+  text-align: center;
+  border-radius: 0.25em;
+  margin-left: 0.5em;
+  animation: fadeInInnerDisplayShowResults 0.75s 1;
+}
+
+/* animations */
+
+@keyframes fadeInInnerDisplayShowResults {
+  from {
+    width: 1px;
+    height: 1px;
+  }
+  to {
+    width: 4em;
+    height: 4em;
+  }
+}

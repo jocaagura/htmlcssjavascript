@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta
+      name="keywords"
+      content="Jocaagura, Odoo, SGI² Anemona, Pregunstas frecuentes, Correo Electronico, Administraión, Soporte Tecnico"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://jocaagura.com/favicon.png" />
+    <!-- FontAwesome css -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+    <script src="js/validarparentesis.js"></script>
+    <title>Validar parentesis - Problemas de algoritmos</title>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>El problema de los parentesis</h1>
+        <p>
+          Hoy vamos a solucionar un reto para escribir un algoritmo que nos
+          permita verificar si en un string tenemos una serie de parentesis
+          correctamente abiertos y cerrados.
+        </p>
+      </header>
+      <section class="section-main">
+        <h2>Definición:</h2>
+        <p class="explanation">
+          Dada una cadena de texto <span>s</span> que contiene unicamente los
+          caracteres <span>'(', ')', '{', '}', '[', ']'</span> y determinar si
+          la salida es valida.
+        </p>
+        <p>Una salida es valida si:</p>
+        <ol>
+          <li>
+            Los parentesis abiertos deberan estar cerrados por el mismo tipo de
+            parentesis
+          </li>
+          <li>Los parentesis se deben cerrar en el orden correcto</li>
+        </ol>
+      </section>
+      <section class="section-main">
+        <h2>Ejemplo 1</h2>
+        <p><strong>entrada:</strong> "()"</p>
+        <p><strong>Salida:</strong> true</p>
+      </section>
+
+      <section class="section-main">
+        <h2>Ejemplo 2</h2>
+        <p><strong>entrada:</strong> "()[]{}"</p>
+        <p><strong>Salida:</strong> true</p>
+      </section>
+
+      <section class="section-main">
+        <h2>Ejemplo 3</h2>
+        <p><strong>entrada:</strong> "(]"</p>
+        <p><strong>Salida:</strong> false</p>
+      </section>
+
+      <section class="section-main">
+        <h2>Ejemplo 4</h2>
+        <p><strong>entrada:</strong> "{[]}}"</p>
+        <p><strong>Salida:</strong> true</p>
+      </section>
+
+      <section class="section-main">
+        <h2>Limites</h2>
+        <ul>
+          <li><span>1 &lt;= s.length &lt;= 10000</span></li>
+          <li><span>s</span> consiste unicamente <span>'()[]{}'</span></li>
+
+        </ul>
+      </section>
+      <section class="section-main">
+          <h2>Resolver los casos</h2>
+          <div id="display">
+              <div id="show_results">
+                    <div>
+                        1
+                    </div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        3
+                    </div>
+              </div>
+              <p id="output">Waiting</p>
+            <input type="text" id="input" />
+            <button id="execute">Ejecutar</button>
+          </div>
+
+
+      </section>
+
+    </div>
+  </body>
+</html>
