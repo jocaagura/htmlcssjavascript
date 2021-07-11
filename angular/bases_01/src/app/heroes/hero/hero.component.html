@@ -1,0 +1,23 @@
+<h2>{{name}}</h2>
+
+
+<dl>
+    <td>Nombre: </td>
+    <dd>{{name}}</dd>
+</dl>
+<dl>
+    <td>Edad: </td>
+    <dd>{{age}}</dd>
+</dl>
+<dl>
+    <td>Function: </td>
+    <dd>{{printName()}}</dd>
+</dl>
+<dl>
+    <td>Capitalizado: </td>
+    <dd>{{nameUppercase}}</dd>
+</dl>
+
+
+<button (click)="changeName()">Cambiar nombres</button>
+<button (click)="changeAge()">Cambiar edad</button>
