@@ -1,0 +1,93 @@
+/* variables section */
+#navbar {
+  width: 20%;
+  position: fixed;
+  height: 100%;
+}
+#main-doc {
+  width: 72%;
+  left: 23%;
+  position: absolute;
+  height: 100%;
+}
+h1 {
+  margin: 0px;
+  text-align: center;
+  line-height: 2em;
+  color: purple;
+}
+#navbar > ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbar ul > li {
+  border-bottom: solid black 2px;
+  position: relative;
+  width: 100%;
+  list-style: none;
+  color: black;
+  background-color: #ffc;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#navbar ul > li:hover {
+  color: #ffc;
+  background-color: black;
+  border-bottom: solid purple 2px;
+}
+a {
+  color: purple;
+  text-decoration: none;
+  font-style: italic;
+}
+
+header {
+  width: 100%;
+  line-height: 2em;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  font-weight: bold;
+}
+#welcome-section {
+  height: 100%;
+  width: 100%;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.project-container {
+  padding: 1em;
+  align-items: center;
+}
+.project-container > div {
+  background-color: orange;
+  border: solid 2px purple;
+  border-radius: 1em;
+  padding: 1em;
+  width: 65%;
+}
+
+.project-container-inner {
+  position: relative;
+}
+.project-container-inner > div {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 420px) {
+  #navbar > #main-doc {
+    position: relative;
+  }
+}
