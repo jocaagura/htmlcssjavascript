@@ -1,0 +1,496 @@
+/* Realizado por Albert J. Jiménez P. oficinameltablero@gmail.com */
+
+:root {
+  --main-bg-color: #91d8f7;
+  --main-canvas-color: #fffbdf;
+  --sec-bg-color: #ffcc29;
+  --accent-color: #bd93aa;
+
+  --primary-title-color: #ffd1af;
+  --secondary-title-color: #ffb385;
+  --h1-color: #f67550;
+  --contrast-title-color: #ffffff;
+  --table-bg-color: #fff8ca;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--main-canvas-color);
+  color: #666666;
+}
+main {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--main-canvas-color, #fffbdf);
+  padding-top: 4.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  max-width: 75em;
+  margin: auto;
+}
+
+.main-col {
+  width: 42%;
+  min-height: 100px;
+  background-color: var(--main-bg-color, #91d8f7);
+  border-radius: 2em 2em 0% 0%;
+  padding-top: 0.5%;
+}
+.main-col-gen {
+  width: 96%;
+  height: 40em;
+  margin: 0% auto;
+  border-radius: 3% 3% 0% 0%;
+}
+
+.main-col-prin {
+  background-color: var(--contrast-title-color, #ffffff);
+}
+
+.main-col-gen > article {
+  width: 96%;
+  height: 98%;
+  margin: auto;
+}
+
+.main-col-gen > article > header {
+  line-height: 4.5em;
+}
+h1,
+.main-col-prin > article > h2 {
+  color: var(--h1-color, #f67550);
+  margin: 1%;
+}
+h1 {
+  font-size: 200%;
+}
+.main-col-prin > article > h2 {
+  font-size: 225%;
+}
+.main-col-prin ul > li {
+  list-style-type: none;
+  list-style-image: url("../img/heart.png");
+  line-height: 130%;
+}
+.main-col-prin p {
+  margin: 0% 7%;
+  line-height: 110%;
+  font-size: 1.1em;
+}
+
+.main-col-prin ul > li::before {
+  content: "-   ";
+}
+
+/* id card section */
+.id-card {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.id-card > div {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.id-card-photo {
+  width: 90%;
+  height: 90%;
+  margin: 0% auto;
+}
+.id-card-photo > * {
+  position: relative;
+}
+.id-card-photo > .avatar {
+  width: 82%;
+  left: 9%;
+}
+.bar-of-life {
+  bottom: 37%;
+  width: 100%;
+}
+.heart {
+  background-color: var(--h1-color, #f67550);
+  border-radius: 50%;
+  bottom: 56%;
+  width: 1em;
+  left: 80%;
+  height: 1em;
+  display: grid;
+  align-content: center;
+}
+.heart > img {
+  width: 0.8em;
+  margin: auto;
+}
+.id-title-bottom {
+  height: 10%;
+}
+.id-title-bottom > h3 {
+  margin: 0px;
+  color: var(--secondary-title-color, #ffb385);
+  letter-spacing: 0.1em;
+  font-size: 125%;
+}
+.id-card-row {
+  width: 100%;
+  height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.id-card-row > div:nth-child(1) {
+  width: 8%;
+  height: 100%;
+  text-align: center;
+}
+.id-card-row > div:nth-child(2) {
+  width: 88%;
+  height: 100%;
+}
+
+.id-card-row > div:nth-child(2) > p {
+  margin: 0px;
+}
+/* Section proyectos destacados */
+.main-col-proyectos-destacados {
+  margin-top: -6%;
+  background-color: var(--sec-bg-color, #ffcc29);
+  height: 25em;
+  border-radius: 3%;
+}
+
+.main-col-proyectos-destacados h2 {
+  color: var(--contrast-title-color, #ffffff);
+  margin: 0%;
+  font-size: 2em;
+}
+
+/* Sección habiidades */
+
+.main-col-habilidades {
+  height: 25em;
+}
+
+.main-col-habilidades h2 {
+  color: var(--secondary-title-color, #ffb385);
+  margin: 0%;
+  font-size: 1.8em;
+}
+
+.inner-article {
+  position: relative;
+  background-color: var(--table-bg-color, #fff8ca);
+  height: 80%;
+}
+.table-habilidades {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-hab {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bar-container {
+  height: 75%;
+  width: 100%;
+}
+.col-hab > div:nth-child(2) {
+  width: 100%;
+  height: 12%;
+}
+
+.col-hab > div:nth-child(2) > img {
+  margin: auto;
+  width: 90%;
+  display: block;
+}
+.bar-bottom,
+.bar-top {
+  width: 10%;
+  height: 80%;
+  background-color: var(--h1-color, #ffd1af);
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 10%;
+}
+.bar-top {
+  width: 15%;
+  background-color: var(--contrast-title-color, #ffffff);
+}
+.table-habilidades > .col-hab:nth-child(5) > .bar-container {
+  border-radius: 2em;
+  background-color: var(--secondary-title-color, #ffb385);
+}
+
+.bar-top-ai {
+  top: -60%;
+  height: 70%;
+}
+
+.bar-top-ps {
+  top: -65%;
+  height: 75%;
+}
+
+.bar-top-xd {
+  top: -55%;
+  height: 65%;
+}
+
+.bar-top-blender {
+  top: -45%;
+  height: 55%;
+}
+
+.bar-top-corel {
+  top: -67%;
+  height: 77%;
+}
+
+/* section intereses */
+
+.ul-intereses {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row-intereses {
+  display: flex;
+  justify-content: flex-end;
+}
+.row-intereses > div {
+  height: 2em;
+}
+.row-intereses > div:nth-child(2) > img {
+  width: 2em;
+  height: 2em;
+  margin: 0% 10px;
+}
+
+.row-intereses > div:nth-child(1) > p {
+  margin: auto;
+}
+.inner-pie,
+.inner-pie2 {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.inner-pie-data {
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+.inner-pie-data > img {
+  position: relative;
+}
+
+.inner-pie > .inner-pie-data:nth-child(1) {
+  top: 0%;
+  left: 26%;
+}
+
+.inner-pie > .inner-pie-data:nth-child(2) {
+  top: 28%;
+  left: 51%;
+}
+
+.inner-pie > .inner-pie-data:nth-child(3) {
+  top: 50%;
+  left: 44%;
+}
+
+.inner-pie > .inner-pie-data:nth-child(4) {
+  top: 50%;
+  left: 14%;
+}
+
+.inner-pie > .inner-pie-data:nth-child(5) {
+  top: 49%;
+  left: 11%;
+}
+.inner-pie > .inner-pie-data:nth-child(6) {
+  top: 10%;
+  left: -1px;
+}
+
+.inner-pie2 > .inner-pie-data:nth-child(1) {
+  top: 15%;
+  left: 56%;
+}
+
+.inner-pie2 > .inner-pie-data:nth-child(2) {
+  top: 46%;
+  left: 83%;
+}
+
+.inner-pie2 > .inner-pie-data:nth-child(3) {
+  top: 74%;
+  left: 56%;
+}
+
+.inner-pie2 > .inner-pie-data:nth-child(4) {
+  top: 78%;
+  left: 26%;
+}
+
+.inner-pie2 > .inner-pie-data:nth-child(5) {
+  top: 64%;
+  left: 14%;
+}
+.inner-pie2 > .inner-pie-data:nth-child(6) {
+  top: 34%;
+  left: 45px;
+}
+
+.second-main-col {
+  height: 37em;
+}
+/* Section formación profesional */
+.edu-graph {
+  height: 35.5%;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 2%;
+  height: 50%;
+}
+
+.card-education {
+  display: flex;
+  justify-content: start;
+}
+
+.card-education > div:nth-child(1) {
+  background-color: var(--sec-bg-color, #ffb385);
+  width: 5%;
+  height: 100%;
+  border-radius: 0.25em 0em 0.25em 0em;
+}
+
+.card-education > div:nth-child(2) {
+  background-color: var(--main-bg-color, #91d8f7);
+  width: 95%;
+  height: 100%;
+}
+
+.card-education > div:nth-child(2) > p {
+  margin: 0.85%;
+  font-size: 0.8em;
+}
+
+.card-education > div:nth-child(2) > p:nth-child(1) {
+  color: var(--secondary-title-color, #ffb385);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.card-education > div:nth-child(2) > p:nth-child(2) {
+  height: 55%;
+}
+
+.card-education > div:nth-child(2) > p:nth-child(3) {
+  height: 20%;
+  font-size: 0.6em;
+}
+
+/* saber mas section */
+.main-col-proyectos-destacados2 {
+  margin-top: -4%;
+  height: 25em;
+  border-radius: 3%;
+}
+
+.lista-caracteristicas {
+  border-left: dotted orange 0.2em;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 33em;
+}
+
+.saber-mas-final {
+  height: 53em;
+}
+.descripcion-final {
+  position: relative;
+  top: 9em;
+  list-style: none;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.descripcion-final > li::before {
+  content: "\2022";
+  color: var(--accent-color, #bd93aa);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.ilustration {
+  position: relative;
+  top: -50em;
+  width: 30em;
+}
+
+/* sección especial para la proyeccion de proyectos */
+
+#proyectos {
+  height: 19em;
+  width: 47em;
+  position: relative;
+  top: 0em;
+  left: 0em;
+  display: flex;
+  justify-content: space-around;
+}
+#proyectos > div {
+  opacity: 80%;
+}
+#proyectos > div > div,
+#proyectos > div > img {
+  position: relative;
+}
+#proyectos > div > div {
+  width: 96%;
+  width: 96%;
+  height: 100%;
+  background-color: var(--accent-color, #bd93aa);
+  top: 0%;
+  left: 2%;
+}
+#proyectos > div > img {
+  width: 100%;
+  height: 9em;
+  top: -10em;
+  top: -10em;
+}
+.proyectos-title > h2 {
+  color: var(--contrast-title-color);
+  position: relative;
+  top: 1.3em;
+  text-align: center;
+}
