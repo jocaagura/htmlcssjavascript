@@ -1,16 +1,36 @@
 /* Realizado por Albert J. Jiménez P. oficinameltablero@gmail.com */
 
+@font-face {
+  font-family: justanotherhand;
+  src: url(./fonts/justanotherhand.ttf);
+}
+
+@font-face {
+  font-family: justmeagain;
+  src: url(./fonts/justmeagain.ttf);
+}
+
+@font-face {
+  font-family: opensansitalic;
+  src: url(./fonts/opensansitalic.ttf);
+}
+
+@font-face {
+  font-family: opensansregular;
+  src: url(./fonts/opensansregular.ttf);
+}
+
 :root {
-  --main-bg-color: #91d8f7;
+  --main-bg-color: #ffd0b2;
   --main-canvas-color: #fffbdf;
-  --sec-bg-color: #ffcc29;
-  --accent-color: #bd93aa;
+  --sec-bg-color: #ffb383;
+  --accent-color: #a587b3;
 
   --primary-title-color: #ffd1af;
   --secondary-title-color: #ffb385;
   --h1-color: #f67550;
   --contrast-title-color: #ffffff;
-  --table-bg-color: #fff8ca;
+  --table-bg-color: #ffe8ca;
 }
 
 body {
@@ -35,10 +55,13 @@ main {
 .main-col {
   width: 42%;
   min-height: 100px;
-  background-color: var(--main-bg-color, #91d8f7);
   border-radius: 2em 2em 0% 0%;
   padding-top: 0.5%;
 }
+.main-col:nth-child(2) {
+  background: var(--main-canvas-color, #fffbdf);
+}
+
 .main-col-gen {
   width: 96%;
   height: 40em;
@@ -64,23 +87,32 @@ h1,
   color: var(--h1-color, #f67550);
   margin: 1%;
 }
+span {
+  font-family: justmeagain;
+}
+p > span {
+  font-family: opensansitalic;
+}
+
 h1 {
-  font-size: 200%;
+  font-size: 3em;
+  font-family: justanotherhand;
 }
 .main-col-prin > article > h2 {
   font-size: 225%;
+  font-family: justanotherhand;
 }
 .main-col-prin ul > li {
   list-style-type: none;
-  list-style-image: url("../img/heart.png");
   line-height: 130%;
+  font-family: opensansregular;
 }
 .main-col-prin p {
   margin: 0% 7%;
   line-height: 110%;
   font-size: 1.1em;
+  font-family: opensansregular;
 }
-
 .main-col-prin ul > li::before {
   content: "-   ";
 }
@@ -101,7 +133,7 @@ h1 {
 }
 .id-card-photo {
   width: 90%;
-  height: 90%;
+  height: 75%;
   margin: 0% auto;
 }
 .id-card-photo > * {
@@ -118,7 +150,7 @@ h1 {
 .heart {
   background-color: var(--h1-color, #f67550);
   border-radius: 50%;
-  bottom: 56%;
+  bottom: 59%;
   width: 1em;
   left: 80%;
   height: 1em;
@@ -136,7 +168,9 @@ h1 {
   margin: 0px;
   color: var(--secondary-title-color, #ffb385);
   letter-spacing: 0.1em;
-  font-size: 125%;
+  font-size: 1em;
+  font-family: opensansregular, sans-serif;
+  text-align: center;
 }
 .id-card-row {
   width: 100%;
@@ -147,7 +181,7 @@ h1 {
 }
 
 .id-card-row > div:nth-child(1) {
-  width: 8%;
+  width: 13%;
   height: 100%;
   text-align: center;
 }
@@ -157,11 +191,13 @@ h1 {
 }
 
 .id-card-row > div:nth-child(2) > p {
-  margin: 0px;
+  margin-left: 0.4em;
+  font-family: opensansregular;
+  font-size: 0.9em;
 }
 /* Section proyectos destacados */
 .main-col-proyectos-destacados {
-  margin-top: -6%;
+  margin-top: -2%;
   background-color: var(--sec-bg-color, #ffcc29);
   height: 25em;
   border-radius: 3%;
@@ -170,29 +206,34 @@ h1 {
 .main-col-proyectos-destacados h2 {
   color: var(--contrast-title-color, #ffffff);
   margin: 0%;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: justanotherhand;
 }
 
 /* Sección habiidades */
 
 .main-col-habilidades {
   height: 25em;
+  margin-top: 1em;
 }
 
 .main-col-habilidades h2 {
   color: var(--secondary-title-color, #ffb385);
   margin: 0%;
-  font-size: 1.8em;
+  font-size: 2.8em;
+  font-family: justanotherhand;
 }
 
 .inner-article {
   position: relative;
-  background-color: var(--table-bg-color, #fff8ca);
+  background-color: transparent;
   height: 80%;
 }
 .table-habilidades {
   display: flex;
   justify-content: space-evenly;
+  border-radius: 1em;
+  padding-bottom: 2em;
 }
 
 .col-hab {
@@ -216,17 +257,18 @@ h1 {
 }
 .bar-bottom,
 .bar-top {
-  width: 10%;
+  width: 15%;
   height: 80%;
   background-color: var(--h1-color, #ffd1af);
   position: relative;
   display: block;
   margin: auto;
   top: 10%;
+  border-radius: 2em;
 }
 .bar-top {
   width: 15%;
-  background-color: var(--contrast-title-color, #ffffff);
+  background-color: var(--main-canvas-color);
 }
 .table-habilidades > .col-hab:nth-child(5) > .bar-container {
   border-radius: 2em;
@@ -259,7 +301,15 @@ h1 {
 }
 
 /* section intereses */
+.table-habilidades {
+  background-color: var(--table-bg-color);
+}
 
+.second-main-col h2 {
+  font-size: 3em;
+  color: var(--h1-color, #f67550);
+  font-family: justanotherhand;
+}
 .ul-intereses {
   width: 100%;
   height: 100%;
@@ -275,14 +325,20 @@ h1 {
 .row-intereses > div {
   height: 2em;
 }
-.row-intereses > div:nth-child(2) > img {
+.row-intereses > div:nth-child(2) {
   width: 2em;
   height: 2em;
-  margin: 0% 10px;
+}
+
+.row-intereses > div:nth-child(2) > img {
+  width: 70%;
+  margin-left: 30%;
 }
 
 .row-intereses > div:nth-child(1) > p {
   margin: auto;
+  font-family: opensansitalic;
+  text-align: right;
 }
 .inner-pie,
 .inner-pie2 {
@@ -366,14 +422,17 @@ h1 {
 /* Section formación profesional */
 .edu-graph {
   height: 35.5%;
+  top: -3em;
 }
 
 .education {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3%;
   height: 50%;
+  align-content: space-around;
+  grid-row-gap: 3%;
 }
 
 .card-education {
@@ -392,6 +451,9 @@ h1 {
   background-color: var(--main-bg-color, #91d8f7);
   width: 95%;
   height: 100%;
+  background: linear-gradient(to-right, var(--main-bg-color, red), var(--main-canvas-color, orangered), var(--main-canvas-color, orangered));
+  padding-left: 0.5em;
+  font-family: opensans;
 }
 
 .card-education > div:nth-child(2) > p {
@@ -403,10 +465,13 @@ h1 {
   color: var(--secondary-title-color, #ffb385);
   font-style: italic;
   font-size: 0.9em;
+  font-weight: bold;
+  font-family: opensansregular;
 }
 
 .card-education > div:nth-child(2) > p:nth-child(2) {
   height: 55%;
+  font-size: ;
 }
 
 .card-education > div:nth-child(2) > p:nth-child(3) {
@@ -427,7 +492,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 33em;
+  height: 30em;
+  font-family: opensansitalic;
 }
 
 .saber-mas-final {
@@ -452,8 +518,8 @@ h1 {
 
 .ilustration {
   position: relative;
-  top: -50em;
-  width: 30em;
+  top: -44em;
+  width: 26em;
 }
 
 /* sección especial para la proyeccion de proyectos */
@@ -469,6 +535,7 @@ h1 {
 }
 #proyectos > div {
   opacity: 80%;
+  width: 12em;
 }
 #proyectos > div > div,
 #proyectos > div > img {
@@ -481,16 +548,31 @@ h1 {
   background-color: var(--accent-color, #bd93aa);
   top: 0%;
   left: 2%;
+  border-radius: 1em;
 }
-#proyectos > div > img {
+#proyectos > div > div:nth-child(2) {
   width: 100%;
-  height: 9em;
-  top: -10em;
-  top: -10em;
+  height: 6em;
+  top: -6em;
+  background: transparent;
+}
+#proyectos > div > div:nth-child(2) > img {
+  width: 11.5em;
+  text-align: center;
+  position: absolute;
+  bottom: -0.45em;
 }
 .proyectos-title > h2 {
   color: var(--contrast-title-color);
   position: relative;
-  top: 1.3em;
+  top: 1em;
   text-align: center;
+  font-family: opensansitalic;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
 }
