@@ -3,6 +3,7 @@
 @font-face {
   font-family: justanotherhand;
   src: url(./fonts/justanotherhand.ttf);
+  font-style: italic;
 }
 
 @font-face {
@@ -32,7 +33,10 @@
   --contrast-title-color: #ffffff;
   --table-bg-color: #ffe8ca;
 }
-
+a {
+  color: #666;
+  text-decoration: none;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -342,8 +346,8 @@ h1 {
 }
 .inner-pie,
 .inner-pie2 {
-  width: 60%;
-  height: 100%;
+  width: 19em;
+  height: 19em;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -388,8 +392,8 @@ h1 {
 }
 
 .inner-pie2 > .inner-pie-data:nth-child(1) {
-  top: 15%;
-  left: 56%;
+  top: 3em;
+  left: 9.5em;
 }
 
 .inner-pie2 > .inner-pie-data:nth-child(2) {
@@ -451,9 +455,14 @@ h1 {
   background-color: var(--main-bg-color, #91d8f7);
   width: 95%;
   height: 100%;
-  background: linear-gradient(to-right, var(--main-bg-color, red), var(--main-canvas-color, orangered), var(--main-canvas-color, orangered));
+  background: linear-gradient(
+    to-right,
+    var(--main-bg-color, red),
+    var(--main-canvas-color, orangered),
+    var(--main-canvas-color, orangered)
+  );
   padding-left: 0.5em;
-  font-family: opensans;
+  font-family: opensansregular;
 }
 
 .card-education > div:nth-child(2) > p {
@@ -543,8 +552,8 @@ h1 {
 }
 #proyectos > div > div {
   width: 96%;
-  width: 96%;
-  height: 100%;
+  width: 11em;
+  height: 19.5em;
   background-color: var(--accent-color, #bd93aa);
   top: 0%;
   left: 2%;
@@ -571,8 +580,32 @@ h1 {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em;
   }
+
+  .id-card-row > div:nth-child(2) > p {
+    font-size: 0.7em;
+  }
+  .id-card-row > div:nth-child(1) {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .bar-of-life {
+    bottom: 3.2em;
+  }
+
+  .heart {
+    bottom: 5.35em;
+  }
+  .id-card-photo {
+    height: 6em;
+  }
+
+  .main-col-prin p {
+    font-size: 0.95em;}
+    .main-col-proyectos-destacados h2 {
+     font-size: 2em;}
+
 }
