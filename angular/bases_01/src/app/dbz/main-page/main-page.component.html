@@ -1,0 +1,19 @@
+<h2>DBZ</h2>
+<hr />
+<p>main-page works!</p>
+<div class="row">
+    <div class="col">
+        <app-characters [characters]="characters"></app-characters>
+    </div>
+    <div class="col">
+        <h3>Agregar - {{nuevo.name}} - {{nuevo.power | number}}</h3>
+        <hr>
+        <form (ngSubmit)="addCharacter()">
+            <input placeholder="Nombre personaje" type="text" [(ngModel)]="nuevo.name" name="name" />
+            <input placeholder="poder" type="number" min="1" [value]="nuevo.power" [(ngModel)]="nuevo.power" name="power" />
+            <button>Agregar</button>
+        </form>
+    </div>
+
+
+</div>
