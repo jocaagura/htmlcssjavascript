@@ -1,0 +1,334 @@
+:root {
+  --main-bg-color: #ffd0b2;
+  --main-canvas-color: #fffbdf;
+  --sec-bg-color: #ffb383;
+  --accent-color: #a587b3;
+
+  --primary-title-color: #ffd1af;
+  --secondary-title-color: #ffb385;
+  --h1-color: #f67550;
+  --contrast-title-color: #ffffff;
+  --table-bg-color: #ffe8ca;
+}
+
+h1 {
+  color: var(--h1-color, #f67550);
+}
+h3 {
+  color: var(--accent-color, #a587b3);
+  font-size: 1.5em;
+  margin-top: 0.35em;
+  font-family: sans-serif;
+}
+h2,
+h4,
+h5,
+h6 {
+  color: var(--secondary-title-color, #ffb385);
+}
+
+main {
+  width: 98%;
+  background-color: var(--main-bg-color, #ffd0b2);
+  height: 94%;
+  margin: auto;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+}
+header,
+.pokemon-description,
+footer {
+  background: var(--main-canvas-color, #fffbdf);
+}
+header {
+  height: 4.5em;
+  width: 100%;
+  border-radius: 0.5em 0.5em 0em 0em;
+  display: flex;
+  align-content: space-evenly;
+}
+
+header > div:nth-child(1) {
+  height: 4.5em;
+  width: 4.5em;
+  margin: 0em 0.15em 0em 2em;
+  display: flex;
+  align-content: center;
+}
+header > div:nth-child(1) > img {
+  width: 3em;
+  height: 3em;
+  margin: auto;
+  border-radius: 40%;
+  border: solid 0.2em var(--h1-color, #f67550);
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 4.5em;
+}
+article {
+  width: 100%;
+  height: 75%;
+  background-color: var(--main-bg-color, #ffd0b2);
+}
+article > header {
+  width: 30em;
+  position: relative;
+  top: 2em;
+  left: 8em;
+  border-radius: 0.5em;
+}
+article > header > div:nth-child(1) {
+  margin: 0em 0.2em 0em 7.5em;
+}
+.pokemon-card-avatar-photo {
+  width: 29em;
+  height: 29em;
+  position: relative;
+  left: 9%;
+  top: 3em;
+}
+.pokemon-card-avatar-photo > img {
+  margin: auto;
+  position: absolute;
+  height: 100%;
+}
+.pokemon-description {
+  width: 25%;
+  height: 25em;
+  margin: auto;
+  display: flex;
+  align-content: space-between;
+  flex-flow: wrap;
+  position: absolute;
+  top: 7%;
+  left: 49%;
+  border-radius: 0.5em;
+}
+
+.pokemon-description > div {
+  width: 70%;
+  height: 25em;
+  margin: auto;
+}
+.pokemon-card-description-item {
+  display: inline-flex;
+  align-content: center;
+  flex-direction: column;
+  width: 8em;
+  height: 8em;
+  /* margin: 0.9em 2.5em;*/
+}
+.pokemon-card-description-item > div {
+  height: 40%;
+  width: 100%;
+  margin: 0%;
+  top: 0em;
+  position: relative;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+footer {
+  position: absolute;
+  height: 6em;
+  width: 100%;
+  border-radius: 0.5em;
+  bottom: 0em;
+}
+
+.footer-title {
+  width: 6em;
+  height: 4em;
+  line-height: 4em;
+  margin: 0em 4em 0em 7em;
+  text-align: center;
+}
+footer > .content {
+  width: 20em;
+  height: 4em;
+  line-height: 4em;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+.btn-menu {
+  width: 4em;
+  height: 4em;
+  background-color: var(--main-bg-color, #ffd0b2);
+  border-radius: 0.5em;
+  margin: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(10px);
+}
+.btn-menu:hover {
+  background-color: var(--accent-color, #a587b3);
+  cursor: pointer;
+  border-radius: 0.65em;
+  transition: linear 0.5s;
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+}
+.btn-menu > img {
+  height: 3.5em;
+  margin: 0.125em;
+}
+footer > div {
+  position: relative;
+}
+footer > .content {
+  width: 30em;
+  height: 6em;
+  line-height: 6em;
+  flex-direction: row;
+  align-content: space-between;
+  display: inline-flex;
+  top: 0em;
+  left: 18em;
+}
+
+/* Efectos visuales */
+
+.blur {
+  -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+  filter: blur(10px);
+}
+
+/* responsive */
+@media only screen and (min-width: 1600px) {
+  body {
+    background-color: black;
+  }
+  .pokemon-card-avatar-photo {
+    width: 32em;
+    height: 32em;
+    left: 4%;
+  }
+  .pokemon-description {
+    height: 38em;
+  }
+  .pokemon-card-description-item {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: black;
+  }
+  main {
+    height: 100%;
+  }
+  article > header {
+    left: 10%;
+    width: 80%;
+  }
+
+  .pokemon-card-avatar-photo {
+    width: 20%;
+    height: 20em;
+    top: 5em;
+    z-index: 1;
+    left: 25%;
+  }
+  .pokemon-description {
+    top: 20em;
+    left: 10%;
+    width: 80%;
+    height: 20em;
+  }
+  .pokemon-description > div:nth-child(1) {
+    margin-top: 4em;
+    height: 16em;
+  }
+  .pokemon-card-description-item {
+    flex-direction: row;
+    width: 100%;
+    height: 2.25em;
+    margin: 0.1em 0em;
+    align-content: space-between;
+  }
+  .pokemon-card-description-item > div {
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+
+  .pokemon-card-description-item > div > h4,
+  .pokemon-card-description-item > div > h3 {
+    margin: 0em;
+    font-size: 1.15em;
+    text-align: left;
+  }
+  footer {
+    height: 21em;
+    top: 99%;
+  }
+  footer > .content {
+    width: 70%;
+    height: 14em;
+    display: inline-flex;
+    flex-flow: wrap;
+    top: 4.5em;
+    left: 25.5%;
+    max-width: 25em;
+  }
+  .footer-title {
+    width: 100%;
+    margin: 0em;
+    text-align: center;
+  }
+  .btn-menu {
+    margin: 1.25em 2.35em;
+    width: 6em;
+    height: 6em;
+  }
+  .btn-menu > img {
+    height: 5em;
+    margin: 0.5em;
+  }
+  header > div:nth-child(2) {
+    min-width: 16em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  article > header > div:nth-child(1) {
+    margin: 0em 0.2em 0em 2.5em;
+  }
+
+  .pokemon-card-avatar-photo {
+    width: 80%;
+    left: 10%;
+  }
+  header > div:nth-child(2) {
+    text-align: left;
+  }
+  header > div:nth-child(2) {
+    min-width: none;
+    width: auto;
+  }
+  article > header {
+    width: 21em;
+    position: relative;
+    top: 1em;
+    left: 1em;
+  }
+
+  article > header > div:nth-child(2) {
+    width: auto;
+  }
+  footer > .content {
+    max-width: 20em;
+    left: 10%;
+    width: 80%;
+  }
+  .btn-menu {
+    margin: 1.25em 0em 0em 3em;
+  }
+}
