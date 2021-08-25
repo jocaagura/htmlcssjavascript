@@ -26,7 +26,7 @@ h5,
 h6 {
   color: var(--secondary-title-color, #ffb385);
 }
-body{
+body {
   background-color: var(--main-bg-color, #ffd0b2);
 }
 main {
@@ -113,9 +113,13 @@ article > header > div:nth-child(1) {
 
 .pokemon-description > div {
   width: 70%;
-  height: 25em;
+  height: 100%;
   margin: auto;
   min-width: 20em;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 .pokemon-card-description-item {
   display: inline-flex;
@@ -206,13 +210,16 @@ footer > .content {
   body {
     background-color: black;
   }
+  article > header, .pokemon-card-avatar-photo {
+    width: 40em;
+  }
   .pokemon-card-avatar-photo {
-    width: 32em;
-    height: 32em;
+    height: 40em;
     left: 4%;
   }
   .pokemon-description {
     height: 38em;
+    left:56%;
   }
   .pokemon-card-description-item {
     width: 10em;
@@ -222,7 +229,7 @@ footer > .content {
 
 @media only screen and (max-width: 900px) {
   body {
-    background-color: black;
+    background: var(--main-canvas-color, #fffbdf);
   }
   main {
     height: 100%;
@@ -273,12 +280,16 @@ footer > .content {
   }
   footer > .content {
     width: 70%;
-    height: 14em;
-    display: inline-flex;
+    height: 100%;
+    display: flex;
     flex-flow: wrap;
     top: 4.5em;
-    left: 25.5%;
+    left: 0%;
     max-width: 25em;
+    margin: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
   }
   .footer-title {
     width: 100%;
@@ -286,12 +297,12 @@ footer > .content {
     text-align: center;
   }
   .btn-menu {
-    margin: 1.25em 2.35em;
-    width: 6em;
-    height: 6em;
+    margin: auto;
+    width: 9em;
+    height: 9em;
   }
   .btn-menu > img {
-    height: 5em;
+    height: 8em;
     margin: 0.5em;
   }
   header > div:nth-child(2) {
