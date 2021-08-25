@@ -26,7 +26,9 @@ h5,
 h6 {
   color: var(--secondary-title-color, #ffb385);
 }
-
+body{
+  background-color: var(--main-bg-color, #ffd0b2);
+}
 main {
   width: 98%;
   background-color: var(--main-bg-color, #ffd0b2);
